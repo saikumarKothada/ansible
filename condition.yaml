@@ -5,9 +5,9 @@
       apt:
         name: apache2
         state: present
-        when: ansible_distribution=="Ubuntu"
+      when: ansible_distribution=="Ubuntu"
     - name: "installing apache2 with apk on alpine"
       community.general.apk: 
         name: apache2
         state: latest
-        when: ansible_distribution=="Alpine"          
+      when: ansible_distribution=="Alpine"          
