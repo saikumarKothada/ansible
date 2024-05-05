@@ -14,4 +14,4 @@
         msg: "hello world im using debug module to print this message"
     - name: "printing shell output"
       debug: 
-        var: out          
+        var: out.stdout_lines          
