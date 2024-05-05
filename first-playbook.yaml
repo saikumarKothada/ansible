@@ -1,0 +1,12 @@
+- name: "installing apache2 on db hosts"
+  hosts: db
+  tasks: 
+    - name: "updating repositories"
+      community.general.apk:
+          update_cache: true
+    - name: "upgrading packages"
+      community.general.apk:
+           upgrade: true
+    - name: "installing apache2"
+      community.general.apk:
+          name: apache2           
