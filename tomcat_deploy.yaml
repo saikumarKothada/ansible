@@ -11,14 +11,14 @@
     - name: task2 -- download tomcat bundle
       get_url:
         url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.23/bin/apache-tomcat-10.1.23.zip
-        dest: /opt 
+        dest: /opt
     - name: task3 -- extract the zip file
       unarchive:
-        src: /opt/apache-tomcat-9.0.86.tar.gz  # by default src it looks on the controller machine,where we execute the playbook 
+        src: /opt/apache-tomcat-10.1.23.zip  # by default src it looks on the controller machine,where we execute the playbook 
         remote_src: yes
         dest: /opt      
     - name: task4 -- rename the directory 
-      shell: mv /opt/apache-tomcat-9.0.86 /opt/tomcat
+      shell: mv /opt/apache-tomcat-10.1.23 /opt/tomcat
     - name: task5 -- create a linux group 
       group: 
         name: tomcat
