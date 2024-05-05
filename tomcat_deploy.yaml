@@ -6,7 +6,7 @@
     - name: task1 - install java
       community.general.apk:
         update_cache: true 
-        name: openjdk-17-jdk
+        name: openjdk17
         state: present
     - name: task2 -- download tomcat bundle
       get_url:
