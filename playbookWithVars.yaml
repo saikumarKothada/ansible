@@ -3,4 +3,4 @@
    tasks:    
     - name: "installing: {{var1}}"
       community.general.apk:
-       name: {{var1}}           
+       name: "{{var1}}"           
