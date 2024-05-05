@@ -1,0 +1,3 @@
+- name: "installing openRC"
+  community.general.apk:
+    name: openrc
