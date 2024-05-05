@@ -1,3 +1,6 @@
 - name: "installing openRC"
-  community.general.apk:
-    name: openrc
+  hosts: all
+  tasks:
+  - name: "installing openRC"
+    community.general.apk:
+      name: openrc
