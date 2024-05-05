@@ -1,0 +1,16 @@
+- name: "running script"
+  hosts: all
+  tasks:
+    - name: "copying script to remotehosts"
+      src: /root/ansible-practice/script.sh
+      dest: /root/
+      mode: 0755
+    - name: "running script"
+      shell: /root/script.sh 
+      record: out
+    - name: "print a messsge in ansible output"
+      debug: 
+        msg: "hello world im using debug module to print this message"
+    - name: "printing shell output"
+      debug: 
+        var: out          
