@@ -1,5 +1,5 @@
 - name: install the tomcat & java on all remote servers 
-  hosts: dev
+  hosts: qa
   become: yes 
   become_user: root
   tasks: 
