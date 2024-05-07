@@ -13,7 +13,7 @@
         url: https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.23/bin/apache-tomcat-10.1.23.zip
         dest: /opt
     - name: task3 -- extract the zip file
-      unarchive:
+      ansible.builtin.unarchive:
         src: /opt/apache-tomcat-10.1.23.zip  # by default src it looks on the controller machine,where we execute the playbook 
         remote_src: yes
         dest: /opt      
