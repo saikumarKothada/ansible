@@ -14,7 +14,7 @@
         dest: /opt
     - name: task3 -- extract the zip file
       unarchive:
-        src: /opt/apache-tomcat-10.1.23.zip  # by default src it looks on the controller machine,where we execute the playbook 
+        src: /opt/apache-tomcat-10.1.23.tar.gz  # by default src it looks on the controller machine,where we execute the playbook 
         remote_src: yes
         dest: /opt      
     - name: task4 -- rename the directory 
