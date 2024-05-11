@@ -1,0 +1,20 @@
+- name: "installing apache2"
+  hosts: dev
+  become_user: root
+  tasks:
+     - name: "installing Ubuntu"
+       apt:
+         update_cache: true
+         name: apache2
+         state: latest
+       when: host_distribution=="Ubuntu"
+- name: "installing apache in alpine linux"
+  hosts: all
+  become_user: yes
+  tasks: 
+     - name: "installing apache2 in alipine linux"
+       community.general.apk:
+          update_cahe: true
+          name: apache2
+       when: host_distribution=="Alpine"     
+
