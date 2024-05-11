@@ -7,7 +7,7 @@
          update_cache: true
          name: apache2
          state: latest
-       when: host_distribution=="Ubuntu"
+       when: ansible_distribution=="Ubuntu"
 - name: "installing apache in alpine linux"
   hosts: all
   become_user: yes
@@ -16,5 +16,5 @@
        community.general.apk:
           update_cahe: true
           name: apache2
-       when: host_distribution=="Alpine"     
+       when: ansible_distribution=="Alpine"     
 
