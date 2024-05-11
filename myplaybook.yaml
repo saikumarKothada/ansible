@@ -4,9 +4,8 @@
   tasks:
      - name: "installing Ubuntu"
        apt:
-         - update_cache: true
-         - name: apache2
-           state: latest
+         name: apache2
+         state: latest
        when: ansible_distribution=="Ubuntu"
 - name: "installing apache in alpine linux"
   hosts: all
@@ -14,7 +13,6 @@
   tasks: 
      - name: "installing apache2 in alipine linux"
        community.general.apk:
-          - update_cahe: true
-          - name: apache2
+          name: apache2
        when: ansible_distribution=="Alpine"     
 
