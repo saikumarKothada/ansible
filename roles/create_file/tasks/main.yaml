@@ -1,6 +1,6 @@
 - name: "creating a file"
   file:
-    path: file_path
+    path: file_name
     state: touch 
 - name: "printing variable"     
   debug:
