@@ -1,6 +1,6 @@
 - name: "running script"
   hosts: all
-  tasks:
+  tasks: 
     - name: "copying script to remotehosts"
       copy:
         src: /root/ansible-practice/script.sh

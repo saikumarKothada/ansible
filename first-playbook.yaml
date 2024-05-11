@@ -9,7 +9,7 @@
            upgrade: true
     - name: "installing openRC"
       community.general.apk:
-      name: openrc           
+       name: openrc           
     - name: "installing apache2"
       community.general.apk:
           name: apache2   

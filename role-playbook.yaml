@@ -1,0 +1,6 @@
+- name: "creating file using ansible roles"
+  hosts: all
+  become: yes
+  roles:
+     - create_file
+ 
