@@ -1,7 +1,6 @@
 - name: "creating a file"
   file:
-    path: 
-      var: file_name
+    path: /root/sai.txt
     state: touch 
 - name: "printing variable"     
   debug:
