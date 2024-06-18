@@ -1,0 +1,6 @@
+- name: "installing java on slave1"
+  hosts: slave1
+  tasks:
+     - name: "installing java"
+       community.general.apk:
+          name: openjdk17     

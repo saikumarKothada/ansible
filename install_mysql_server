@@ -1,0 +1,7 @@
+- name: "installing mysql on slave2"
+  hosts: slave2
+  tasks:
+     - name: "installing mysql"
+       community.general.apk:
+          name: mysql
+          state: present   
