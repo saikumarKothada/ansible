@@ -1,0 +1,4 @@
+- name: "installing nginx using ansible roles"
+  hosts: slave2
+  roles: 
+    - name: install_nginx
