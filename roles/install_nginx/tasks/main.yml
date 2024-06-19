@@ -1,6 +1,6 @@
 - name: "updating cache"
   community.general.apk:
    update_cache: true
-- name: "installing apache"
+- name: "installing nginx"
   community.general.apk:
    name: nginx
