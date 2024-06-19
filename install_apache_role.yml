@@ -1,0 +1,4 @@
+- name: "install apache wirh role"
+  hosts: slave1
+  roles:
+    - name: install_apache
