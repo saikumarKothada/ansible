@@ -5,6 +5,3 @@
   community.general.apk:
    name: nginx
 - name: "starting apache service" 
-  ansible.builtin.service:
-    name: nginx
-    state: started
