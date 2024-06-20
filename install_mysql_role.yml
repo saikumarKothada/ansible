@@ -1,0 +1,5 @@
+- name: "installing mysql on prod nodes"
+  hosts: prod
+  become: true
+  roles:  
+    - name: install_mysql

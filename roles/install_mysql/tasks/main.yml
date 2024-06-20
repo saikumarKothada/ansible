@@ -1,0 +1,4 @@
+- name: "installing mysql"
+  community.general.apk:
+    name: mysql
+    state: latest 
