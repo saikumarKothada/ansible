@@ -1,0 +1,5 @@
+- name: "install java on test nodes"
+  hosts: test
+  become: true
+  roles:
+     - name: install_java

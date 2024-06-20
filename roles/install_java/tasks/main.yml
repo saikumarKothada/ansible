@@ -1,0 +1,4 @@
+- name: "installing java"
+  community.general.apk:
+      name: openjdk17
+      state: present 
