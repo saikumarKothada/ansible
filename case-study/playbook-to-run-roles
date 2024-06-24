@@ -1,0 +1,6 @@
+- name: "Configure Apache and Nginx Servers"
+  hosts: apache:nginx
+  become: true
+  roles:
+    - name: apache
+    - name: nginx
