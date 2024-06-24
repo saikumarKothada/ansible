@@ -4,7 +4,7 @@
     name: apache2
     state: present
 - name: "Start Apache service"
-  systemd:
+  service:
     name: apache2
     state: started
 - name: "Display post-installation message for Apache"
