@@ -14,5 +14,5 @@
 - name: "Copy nginx info HTML file"
   copy:
     src: index.html
-    dest: /var/www/localhost/htdocs
+    dest: /usr/share/nginx/html
     mode: 644
