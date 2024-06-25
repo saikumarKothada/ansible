@@ -1,5 +1,5 @@
-- name: "Configure Apache and Nginx Servers"
-  hosts: apache
+- name: "Configure '{{service}}' servers"
+  hosts: '{{service}}'
   become: true
   roles:
-    - name: apache
+    - name: '{{service}}'
