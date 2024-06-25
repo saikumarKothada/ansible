@@ -14,5 +14,5 @@
 - name: "Copy Apache info HTML file"
   copy:
     src: index.html
-    dest: /var/www/html/
+    dest: /var/www/localhost/htdocs
     mode: 644
