@@ -7,7 +7,7 @@
   service:
     name: apache2
     state: started
-  ignore_error: true 
+  ignore_errors: true 
 - name: "Display post-installation message for Apache"
   debug:
     msg: "Apache installation completed successfully!"
