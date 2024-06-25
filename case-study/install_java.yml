@@ -1,0 +1,5 @@
+- name: "install java on apache servers"
+  hosts: apache
+  become: true
+  roles:
+     - name: install_java
