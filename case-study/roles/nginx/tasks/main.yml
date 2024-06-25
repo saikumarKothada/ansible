@@ -6,6 +6,7 @@
 - name: "starting nginx service"
   ansible.builtin.command:
     cmd: "nginx -g 'daemon off;'"
+  async: 10
   poll: 0
 - name: "Display post-installation message for nginx"
   debug:
