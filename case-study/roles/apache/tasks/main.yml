@@ -11,7 +11,7 @@
 - name: "starting apache service"
   ansible.builtin.command:
     cmd: /usr/sbin/httpd -D FOREGROUND
-  pool: 0
+    pool: 0
 - name: "Display post-installation message for Apache"
   debug:
     msg: "Apache installation completed successfully!"
