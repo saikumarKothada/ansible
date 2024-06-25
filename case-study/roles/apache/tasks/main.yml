@@ -13,6 +13,6 @@
     msg: "Apache installation completed successfully!"
 - name: "Copy Apache info HTML file"
   copy:
-    src: apache_info.html
-    dest: /var/www/html/index.html
+    src: index.html
+    dest: /var/www/html/
     mode: 644
