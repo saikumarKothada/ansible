@@ -1,0 +1,17 @@
+---
+- name: "Installing nginx"
+  community.general.apk:
+    name: nginx
+    state: present
+- name: "starting nginx service"
+  ansible.builtin.command:
+    cmd: "nginx -g 'daemon off;'"
+  poll: 0
+- name: "Display post-installation message for nginx"
+  debug:
+    msg: "Nginx installation completed successfully!"
+- name: "Copy nginx info HTML file"
+  copy:
+    src: index.html
+    dest: /var/www/localhost/htdocs
+    mode: 644
